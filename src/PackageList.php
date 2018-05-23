@@ -55,7 +55,7 @@ class PackageList
         return $packages;
     }
 
-    public function _getDiff($newList, $existed, $limit = 100)
+    public function _getDiff($newList, $existed, $limit = 500)
     {
         $inexistence = array_diff($newList, $existed);
         if (count($inexistence) > $limit) {
